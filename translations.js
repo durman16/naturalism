@@ -1,6 +1,6 @@
 const translations = {
   tr: {
-    "site.title": "Doğanın Şifası — Doğal Tarifler ve Bitkisel Bilgelik",
+    "site.title": "Naturalism — Doğal Tarifler ve Bitkisel Bilgelik",
     "nav.tea": "Bitki Çayları",
     "nav.oils": "Yağ Karışımları",
     "nav.herbs": "Şifalı Bitkiler",
@@ -423,7 +423,7 @@ const translations = {
   },
 
   en: {
-    "site.title": "Nature's Remedy — Natural Recipes & Herbal Wisdom",
+    "site.title": "Naturalism — Natural Recipes & Herbal Wisdom",
     "nav.tea": "Herbal Teas",
     "nav.oils": "Oil Blends",
     "nav.herbs": "Healing Herbs",
