@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site.title">Doğanın Şifası — Doğal Tarifler ve Bitkisel Bilgelik</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M14 6 C10 10, 8 14, 10 18 C12 22, 16 22, 18 18 C20 14, 18 10, 14 6Z" fill="currentColor" opacity="0.15"/>
+          <path d="M14 6 C10 10, 8 14, 10 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M14 6 C18 10, 20 14, 18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M9 13 C11 12, 13 13, 14 12" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none"/>
+          <path d="M19 13 C17 12, 15 13, 14 12" stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span>Doğanın Şifası</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#bitki-caylari" data-i18n="nav.tea">Bitki Çayları</a></li>
+        <li><a href="#yag-karisimlari" data-i18n="nav.oils">Yağ Karışımları</a></li>
+        <li><a href="#sifali-bitkiler" data-i18n="nav.herbs">Şifalı Bitkiler</a></li>
+        <li><a href="#cilt-bakimi" data-i18n="nav.skin">Cilt Bakımı</a></li>
+        <li><a href="#ev-ilaclari" data-i18n="nav.remedies">Ev İlaçları</a></li>
+        <li><a href="#tonikler" data-i18n="nav.tonics">Tonikler</a></li>
+        <li><a href="#kaynaklar" data-i18n="nav.sources">Kaynaklar</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()" aria-label="Switch language">
+          <span class="lang-opt" id="lang-tr">TR</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-opt" id="lang-en">EN</span>
+        </button>
+        <button class="nav-toggle" aria-label="Menüyü aç" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="hero-eyebrow" data-i18n="hero.eyebrow">Kadim bilgelik · Bilimsel temel</span>
+        <h1 data-i18n="hero.title">Doğanın içindeki şifayı keşfet</h1>
+        <p class="hero-sub" data-i18n="hero.sub">Binlerce yıllık gelenekten gelen, modern bilimle desteklenen bitkisel tarifler. Çaylar, yağ karışımları ve şifalı otlar — hepsi doğal, hepsi kanıtlı.</p>
+        <div class="hero-ctas">
+          <a href="#bitki-caylari" class="btn btn-primary" data-i18n="hero.cta1">Tarifleri keşfet</a>
+          <a href="#kaynaklar" class="btn btn-ghost" data-i18n="hero.cta2">Kaynaklar</a>
+        </div>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="160" cy="200" rx="120" ry="20" fill="currentColor" opacity="0.04"/>
+          <rect x="90" y="160" width="140" height="80" rx="12" fill="currentColor" opacity="0.08"/>
+          <rect x="80" y="155" width="160" height="16" rx="8" fill="currentColor" opacity="0.12"/>
+          <rect x="70" y="163" width="12" height="24" rx="6" fill="currentColor" opacity="0.1"/>
+          <rect x="238" y="163" width="12" height="24" rx="6" fill="currentColor" opacity="0.1"/>
+          <path d="M130 150 Q125 135 130 120 Q135 105 130 90" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.25" fill="none"/>
+          <path d="M160 145 Q155 128 160 112 Q165 96 160 80" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.25" fill="none"/>
+          <path d="M190 150 Q195 133 190 116 Q185 99 190 84" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.25" fill="none"/>
+          <path d="M160 155 L160 60" stroke="#4a7c59" stroke-width="2.5" stroke-linecap="round"/>
+          <ellipse cx="145" cy="95" rx="22" ry="12" fill="#4a7c59" opacity="0.7" transform="rotate(-30 145 95)"/>
+          <ellipse cx="175" cy="110" rx="22" ry="12" fill="#4a7c59" opacity="0.7" transform="rotate(30 175 110)"/>
+          <ellipse cx="148" cy="130" rx="20" ry="10" fill="#4a7c59" opacity="0.6" transform="rotate(-20 148 130)"/>
+          <ellipse cx="172" cy="75" rx="18" ry="10" fill="#4a7c59" opacity="0.6" transform="rotate(25 172 75)"/>
+          <circle cx="145" cy="82" r="5" fill="#d4b896" opacity="0.8"/>
+          <circle cx="175" cy="97" r="5" fill="#d4b896" opacity="0.8"/>
+          <circle cx="160" cy="62" r="4" fill="#c9956a" opacity="0.7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer-bar">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M8 5v4M8 11v.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <p data-i18n="disclaimer">Bu site tıbbi tavsiye niteliği taşımaz. Kronik hastalık veya ilaç kullanımı durumunda doktorunuza danışın.</p>
+    </div>
+
+    <!-- BİTKİ ÇAYLARI -->
+    <section class="section" id="bitki-caylari">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.tea.tag">Bitki Çayları</span>
+        <h2 data-i18n="section.tea.title">Kadim çaylar, modern yaşamda</h2>
+        <p data-i18n="section.tea.desc">Hipokrat'tan Çin tıbbına, Anadolu şifalı bitkilerinden modern fitoterapiye uzanan binlerce yıllık çay geleneği.</p>
+      </div>
+
+      <div class="recipe-grid">
+
+        <!-- MELİSA -->
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--green-light)">
+            <div class="recipe-icon" style="color: var(--green-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4 C12 10 8 14 10 20 C12 26 20 26 22 20 C24 14 20 10 16 4Z" fill="currentColor" opacity="0.2"/><path d="M16 4 C12 10 8 14 10 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M16 4 C20 10 24 14 22 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M10 20 C12 24 20 24 22 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="tea1.ancient">Kadim</span>
+              <span class="badge badge-science" data-i18n="tea1.badge2">Klinik kanıt</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="tea1.name">Melisa Çayı</h3>
+            <p class="recipe-latin" data-i18n="tea1.latin">Melissa officinalis</p>
+            <p class="recipe-desc" data-i18n="tea1.desc">Avrupa'da antik Yunan döneminden beri kullanılan melisa, Dioscorides'in "De Materia Medica" eserinde (M.S. 77) yer alır.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="tea1.ingredients"><li>1 yemek kaşığı taze melisa yaprağı <em>(veya 1 tatlı kaşığı kurusu)</em></li><li>200 ml kaynar su <em>(90°C — kaynamamış)</em></li><li>İsteğe bağlı: bir dilim limon, taze nane</li></ul>
+              <ol class="steps" data-i18n-html="tea1.steps"><li>Yaprakları çay kabına alın, üzerine sıcak suyu dökün.</li><li>5-7 dakika demleyin, süzün.</li><li>Günde 2-3 fincan, tercihen gece uyku öncesi.</li></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="tea1.benefits"><span class="benefit">Anksiyete &amp; stres</span><span class="benefit">Uyku kalitesi</span><span class="benefit">Sindirim</span><span class="benefit">Baş ağrısı</span></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="tea1.science">Rosmarinik asit ve flavonoidler GABA-A reseptörlerini modüle ederek anksiyolitik etki gösterir.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ZERDEÇal -->
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--amber-light)">
+            <div class="recipe-icon" style="color: var(--amber-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="6" fill="currentColor" opacity="0.3"/><line x1="16" y1="4" x2="16" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="24" x2="16" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="16" x2="8" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="24" y1="16" x2="28" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="8.3" y1="8.3" x2="11.2" y2="11.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="20.8" y1="20.8" x2="23.7" y2="23.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="23.7" y1="8.3" x2="20.8" y2="11.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="11.2" y1="20.8" x2="8.3" y2="23.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="tea2.ancient">Ayurveda · 5000 yıl</span>
+              <span class="badge badge-science" data-i18n="tea2.badge2">Meta-analiz</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="tea2.name">Zerdeçal-Karabiber Çayı</h3>
+            <p class="recipe-latin" data-i18n="tea2.latin">Curcuma longa + Piper nigrum</p>
+            <p class="recipe-desc" data-i18n="tea2.desc">Ayurveda'da "Haldi doodh" olarak bilinen bu karışım, Sushruta Samhita'da anti-inflamatuvar kullanım için tarif edilmiştir.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="tea2.ingredients"></ul>
+              <ol class="steps" data-i18n-html="tea2.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="tea2.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="tea2.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PAPATYA-LAVANTA -->
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--blue-light)">
+            <div class="recipe-icon" style="color: var(--blue-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 6 Q10 12 10 20 Q10 26 16 26 Q22 26 22 20 Q22 12 16 6Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.5"/><path d="M10 18 Q13 16 16 18 Q19 20 22 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="tea3.ancient">Geleneksel Çin Tıbbı</span>
+              <span class="badge badge-science" data-i18n="tea3.badge2">RCT kanıtı</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="tea3.name">Papatya-Lavanta Uyku Çayı</h3>
+            <p class="recipe-latin" data-i18n="tea3.latin">Matricaria chamomilla + Lavandula angustifolia</p>
+            <p class="recipe-desc" data-i18n="tea3.desc">Mısır papirüslerinde ve Yunan hekimliğinde yatıştırıcı olarak kaydedilen papatya.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="tea3.ingredients"></ul>
+              <ol class="steps" data-i18n-html="tea3.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="tea3.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="tea3.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ZENCEFİL-LİMON -->
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--coral-light)">
+            <div class="recipe-icon" style="color: var(--coral-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 8 L12 16 L8 14 L12 22 L16 20 L20 22 L24 14 L20 16Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="tea4.ancient">Anadolu geleneği</span>
+              <span class="badge badge-science" data-i18n="tea4.badge2">Klinik çalışma</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="tea4.name">Zencefil-Limon Bağışıklık Çayı</h3>
+            <p class="recipe-latin" data-i18n="tea4.latin">Zingiber officinale + Citrus limon</p>
+            <p class="recipe-desc" data-i18n="tea4.desc">Zencefil, M.Ö. 3000'e uzanan Çin ve Hint tıbbi kayıtlarında yer alır.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="tea4.ingredients"></ul>
+              <ol class="steps" data-i18n-html="tea4.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="tea4.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="tea4.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ADAÇAYI -->
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--purple-light)">
+            <div class="recipe-icon" style="color: var(--purple-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><ellipse cx="16" cy="12" rx="6" ry="8" fill="currentColor" opacity="0.2"/><path d="M10 12 Q10 22 16 24 Q22 22 22 12" stroke="currentColor" stroke-width="1.5" fill="none"/><line x1="16" y1="24" x2="16" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="tea5.ancient">Anadolu + Orta Doğu</span>
+              <span class="badge badge-science" data-i18n="tea5.badge2">Randomize çalışma</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="tea5.name">Adaçayı Çayı</h3>
+            <p class="recipe-latin" data-i18n="tea5.latin">Salvia officinalis</p>
+            <p class="recipe-desc" data-i18n="tea5.desc">Anadolu'da "dağ çayı" olarak bilinir, Osmanlı tıbbında menopoz şikayetlerine karşı kullanılmıştır.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="tea5.ingredients"></ul>
+              <ol class="steps" data-i18n-html="tea5.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="tea5.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="tea5.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- EKİNEZYA-KUŞBURNU -->
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--teal-light)">
+            <div class="recipe-icon" style="color: var(--teal-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 24 Q8 14 16 10 Q24 14 24 24" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><path d="M12 20 Q16 16 20 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M10 23 Q16 18 22 23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="tea6.ancient">Geleneksel Çin Tıbbı</span>
+              <span class="badge badge-science" data-i18n="tea6.badge2">Klinik kanıt</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="tea6.name">Ekinezya-Kuşburnu Çayı</h3>
+            <p class="recipe-latin" data-i18n="tea6.latin">Echinacea purpurea + Rosa canina</p>
+            <p class="recipe-desc" data-i18n="tea6.desc">Kuzey Amerika yerlileri ekinazeayı yüzyıllardır enfeksiyonlara karşı kullanmıştır.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="tea6.ingredients"></ul>
+              <ol class="steps" data-i18n-html="tea6.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="tea6.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="tea6.science"></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- YAĞ KARIŞIMLARI -->
+    <section class="section section-alt" id="yag-karisimlari">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.oils.tag">Yağ Karışımları</span>
+        <h2 data-i18n="section.oils.title">Doğal yağların gücü</h2>
+        <p data-i18n="section.oils.desc">Antik Mısır, Yunan ve Anadolu tıbbında yağlar hem ilaç hem kozmetik hem beslenme amacıyla kullanılmıştır.</p>
+      </div>
+
+      <div class="recipe-grid recipe-grid-wide">
+
+        <!-- ÇÖREK OTU -->
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--amber-light)">
+            <div class="recipe-icon" style="color: var(--amber-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="32" rx="14" ry="10" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><path d="M24 8 Q18 18 18 28 Q18 38 24 38 Q30 38 30 28 Q30 18 24 8Z" fill="currentColor" opacity="0.2"/><path d="M24 8 L24 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="oil1.ancient">Antik Mısır + Yunan</span>
+                <span class="badge badge-science" data-i18n="oil1.badge2">Sistematik derleme</span>
+              </div>
+              <h3 data-i18n="oil1.name">Çörek Otu Yağı Karışımı</h3>
+              <p class="recipe-latin" data-i18n="oil1.latin">Nigella sativa</p>
+              <p class="recipe-desc-sm" data-i18n="oil1.desc">Hz. Muhammed'in "Her hastalığa devadır, ölüm hariç" dediği rivayet edilen çörek otu, modern araştırmalarda da en çok incelenen şifalı bitkilerden biridir.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="two-col">
+              <div class="recipe-section">
+                <h4 data-i18n="oil1.recipe1.title">Bağışıklık karışımı (içeride)</h4>
+                <ul class="ingredient-list" data-i18n-html="oil1.recipe1.ingredients"></ul>
+                <ol class="steps" data-i18n-html="oil1.recipe1.steps"></ol>
+              </div>
+              <div class="recipe-section">
+                <h4 data-i18n="oil1.recipe2.title">Cilt bakım yağı (dışarıda)</h4>
+                <ul class="ingredient-list" data-i18n-html="oil1.recipe2.ingredients"></ul>
+                <ol class="steps" data-i18n-html="oil1.recipe2.steps"></ol>
+              </div>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="oil1.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="oil1.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ZEYTİNYAĞI -->
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--green-light)">
+            <div class="recipe-icon" style="color: var(--green-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="24" rx="16" ry="14" fill="currentColor" opacity="0.12"/><ellipse cx="24" cy="24" rx="8" ry="12" fill="currentColor" opacity="0.2"/><path d="M16 24 Q20 20 24 24 Q28 28 32 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="oil2.ancient">Akdeniz geleneği</span>
+                <span class="badge badge-science" data-i18n="oil2.badge2">Klinik kanıt</span>
+              </div>
+              <h3 data-i18n="oil2.name">Zeytinyağı + Limon Karaciğer Karışımı</h3>
+              <p class="recipe-latin" data-i18n="oil2.latin">Olea europaea + Citrus limon</p>
+              <p class="recipe-desc-sm" data-i18n="oil2.desc">Antik Yunan'dan beri bilinen bu ikilinin karaciğer desteği için kullanımı, İbn Sina'nın Kanun'unda da yer alır.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="two-col">
+              <div class="recipe-section">
+                <h4 data-i18n="oil2.recipe1.title">Sabah ritüeli</h4>
+                <ul class="ingredient-list" data-i18n-html="oil2.recipe1.ingredients"></ul>
+                <ol class="steps" data-i18n-html="oil2.recipe1.steps"></ol>
+              </div>
+              <div class="recipe-section">
+                <h4 data-i18n="oil2.recipe2.title">Güçlendirilmiş versiyon</h4>
+                <ul class="ingredient-list" data-i18n-html="oil2.recipe2.ingredients"></ul>
+                <ol class="steps" data-i18n-html="oil2.recipe2.steps"></ol>
+              </div>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="oil2.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="oil2.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- HİNDİSTANCAYIZI -->
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--coral-light)">
+            <div class="recipe-icon" style="color: var(--coral-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 10 Q16 16 14 26 Q16 36 24 38 Q32 36 34 26 Q32 16 24 10Z" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="28" r="6" fill="currentColor" opacity="0.2"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="oil3.ancient">Hint + Ayurveda</span>
+                <span class="badge badge-science" data-i18n="oil3.badge2">Klinik çalışma</span>
+              </div>
+              <h3 data-i18n="oil3.name">Hindistan Cevizi Yağı Karışımları</h3>
+              <p class="recipe-latin" data-i18n="oil3.latin">Cocos nucifera</p>
+              <p class="recipe-desc-sm" data-i18n="oil3.desc">Ayurveda'da binlerce yıldır kullanılan hindistancevizi yağı, tropik halk tıbbının temel unsurlarından biridir.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="two-col">
+              <div class="recipe-section">
+                <h4 data-i18n="oil3.recipe1.title">Saç bakım yağı</h4>
+                <ul class="ingredient-list" data-i18n-html="oil3.recipe1.ingredients"></ul>
+                <ol class="steps" data-i18n-html="oil3.recipe1.steps"></ol>
+              </div>
+              <div class="recipe-section">
+                <h4 data-i18n="oil3.recipe2.title">Oil pulling (ağız bakımı)</h4>
+                <ul class="ingredient-list" data-i18n-html="oil3.recipe2.ingredients"></ul>
+                <ol class="steps" data-i18n-html="oil3.recipe2.steps"></ol>
+              </div>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="oil3.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="oil3.science"></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ŞİFALI BİTKİLER -->
+    <section class="section" id="sifali-bitkiler">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.herbs.tag">Şifalı Bitkiler Ansiklopedisi</span>
+        <h2 data-i18n="section.herbs.title">Kadim bilgeliğin özü</h2>
+        <p data-i18n="section.herbs.desc">Antik çağlardan günümüze ulaşan, klinisyenler tarafından araştırılan bitkiler.</p>
+      </div>
+
+      <div class="herb-grid">
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--green-light); color: var(--green-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3 C9 7 7 10 8 15 C9 19 12 21 12 21 C12 21 15 19 16 15 C17 10 15 7 12 3Z" fill="currentColor" opacity="0.25" stroke="currentColor" stroke-width="1.2"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb1.name">Ashwagandha</h4>
+            <p class="herb-latin" data-i18n="herb1.latin">Withania somnifera · Hint geleneksel tıbbı</p>
+            <p data-i18n="herb1.desc">Ayurveda'nın en önemli adaptojeni.</p>
+            <div class="herb-uses" data-i18n-html="herb1.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb1.note"></p>
+          </div>
+        </div>
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--amber-light); color: var(--amber-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" fill="currentColor" opacity="0.25"/><line x1="12" y1="3" x2="12" y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="18" x2="12" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="3" y1="12" x2="6" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb2.name">Sarı Kantaron</h4>
+            <p class="herb-latin" data-i18n="herb2.latin">Hypericum perforatum · Anadolu + Avrupa</p>
+            <p data-i18n="herb2.desc">Avrupa'da en çok kullanılan bitkisel antidepresandır.</p>
+            <div class="herb-uses" data-i18n-html="herb2.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb2.note"></p>
+          </div>
+        </div>
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--teal-light); color: var(--teal-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4 L8 10 L4 8 L8 16 L12 14 L16 16 L20 8 L16 10Z" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb3.name">Panax Ginseng</h4>
+            <p class="herb-latin" data-i18n="herb3.latin">Panax ginseng · Geleneksel Çin Tıbbı · 4000 yıl</p>
+            <p data-i18n="herb3.desc">Çin tıbbının en değerli bitkisi.</p>
+            <div class="herb-uses" data-i18n-html="herb3.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb3.note"></p>
+          </div>
+        </div>
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--purple-light); color: var(--purple-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="10" rx="5" ry="7" fill="currentColor" opacity="0.2"/><path d="M7 10 Q7 18 12 18 Q17 18 17 10" stroke="currentColor" stroke-width="1.2" fill="none"/><line x1="12" y1="18" x2="12" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb4.name">Kediotu (Valerian)</h4>
+            <p class="herb-latin" data-i18n="herb4.latin">Valeriana officinalis · Antik Roma + Çin</p>
+            <p data-i18n="herb4.desc">Dioscorides ve Galen uyku bozukluğu için önermiştir.</p>
+            <div class="herb-uses" data-i18n-html="herb4.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb4.note"></p>
+          </div>
+        </div>
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--coral-light); color: var(--coral-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3 Q6 8 6 14 Q6 20 12 21 Q18 20 18 14 Q18 8 12 3Z" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="14" r="3" fill="currentColor" opacity="0.25"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb5.name">Biberiye</h4>
+            <p class="herb-latin" data-i18n="herb5.latin">Rosmarinus officinalis · Akdeniz geleneği</p>
+            <p data-i18n="herb5.desc">Antik Yunan ve Roma'da hafıza için kullanılmıştır.</p>
+            <div class="herb-uses" data-i18n-html="herb5.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb5.note"></p>
+          </div>
+        </div>
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--blue-light); color: var(--blue-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="3" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.2"/><path d="M12 10 L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9 7 Q12 4 15 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb6.name">Nane</h4>
+            <p class="herb-latin" data-i18n="herb6.latin">Mentha piperita · Antik Mısır + Akdeniz</p>
+            <p data-i18n="herb6.desc">Mısır papirüslerinde kayıtlı olan nane.</p>
+            <div class="herb-uses" data-i18n-html="herb6.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb6.note"></p>
+          </div>
+        </div>
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--green-light); color: var(--green-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 18 Q6 10 12 6 Q18 10 18 18" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.2"/><path d="M9 15 Q12 12 15 15" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb7.name">Sarımsak</h4>
+            <p class="herb-latin" data-i18n="herb7.latin">Allium sativum · En eski şifalı bitki (M.Ö. 3000)</p>
+            <p data-i18n="herb7.desc">Sümer tabletlerinden Hipokrat'a uzanan bir şifa geleneği.</p>
+            <div class="herb-uses" data-i18n-html="herb7.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb7.note"></p>
+          </div>
+        </div>
+
+        <div class="herb-card">
+          <div class="herb-icon" style="background: var(--amber-light); color: var(--amber-dark)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4 C8 7 6 11 8 16 C9 19 12 20 12 20 C12 20 15 19 16 16 C18 11 16 7 12 4Z" fill="currentColor" opacity="0.2"/></svg></div>
+          <div class="herb-info">
+            <h4 data-i18n="herb8.name">Tarçın</h4>
+            <p class="herb-latin" data-i18n="herb8.latin">Cinnamomum verum · Antik Çin + Mısır + Orta Doğu</p>
+            <p data-i18n="herb8.desc">M.Ö. 2700'de Çin tıbbında kullanılmıştır.</p>
+            <div class="herb-uses" data-i18n-html="herb8.uses"></div>
+            <p class="herb-use-note" data-i18n-html="herb8.note"></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DOĞAL CİLT BAKIMI -->
+    <section class="section section-alt" id="cilt-bakimi">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.skin.tag">Doğal Cilt Bakımı</span>
+        <h2 data-i18n="section.skin.title">Mutfaktan cilde</h2>
+        <p data-i18n="section.skin.desc">Mısır, Ayurveda ve Akdeniz'in binlerce yıllık güzellik ritüelleri, modern bileşen bilimiyle yeniden formüle edildi.</p>
+      </div>
+      <div class="recipe-grid">
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--amber-light)">
+            <div class="recipe-icon" style="color: var(--amber-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="14" r="8" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><path d="M10 20 Q8 26 16 28 Q24 26 22 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><line x1="16" y1="6" x2="16" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="11" y1="7.5" x2="9" y2="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="21" y1="7.5" x2="23" y2="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="skin1.ancient">Modern + Geleneksel</span>
+              <span class="badge badge-science" data-i18n="skin1.badge2">Dermatoloji destekli</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="skin1.name">Doğal Mineral Güneş Kremi</h3>
+            <p class="recipe-latin" data-i18n="skin1.latin">Çinko oksit + Shea yağı + Ahududu çekirdeği yağı</p>
+            <p class="recipe-desc" data-i18n="skin1.desc">FDA onaylı tek mineral UV filtresi olan çinko oksit, bitkisel yağlarla birleştirildiğinde sentetik kimyasal olmadan geniş spektrumlu koruma sunar.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="skin1.ingredients"></ul>
+              <ol class="steps" data-i18n-html="skin1.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="skin1.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="skin1.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--coral-light)">
+            <div class="recipe-icon" style="color: var(--coral-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4 Q10 10 10 18 Q10 26 16 27 Q22 26 22 18 Q22 10 16 4Z" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="18" r="4" fill="currentColor" opacity="0.2"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="skin2.ancient">Antik Mısır + Ayurveda</span>
+              <span class="badge badge-science" data-i18n="skin2.badge2">Klinik kanıt</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="skin2.name">Yaşlanma Karşıtı Yüz Serumu</h3>
+            <p class="recipe-latin" data-i18n="skin2.latin">Kuşburnu + Frankincense + E vitamini</p>
+            <p class="recipe-desc" data-i18n="skin2.desc">Kleopatra'nın kuşburnu yağı kullandığı rivayet edilir. Frankincense antik Mısır ve Ayurveda'da cilt yenilenmesi için kullanıldı.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="skin2.ingredients"></ul>
+              <ol class="steps" data-i18n-html="skin2.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="skin2.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="skin2.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--amber-light)">
+            <div class="recipe-icon" style="color: var(--amber-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="8" width="20" height="18" rx="5" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><path d="M10 14 Q16 11 22 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M10 19 Q16 16 22 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="skin3.ancient">Ayurveda + Antik Hindistan</span>
+              <span class="badge badge-science" data-i18n="skin3.badge2">Klinik çalışma</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="skin3.name">Zerdeçal-Bal Aydınlatıcı Maske</h3>
+            <p class="recipe-latin" data-i18n="skin3.latin">Curcuma longa + Manuka balı + Yoğurt</p>
+            <p class="recipe-desc" data-i18n="skin3.desc">Hint düğün geleneklerinde gelinler parlak cilt için yüzyıllardır zerdeçal-süt maskesi uygular.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="skin3.ingredients"></ul>
+              <ol class="steps" data-i18n-html="skin3.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="skin3.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="skin3.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--green-light)">
+            <div class="recipe-icon" style="color: var(--green-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><ellipse cx="16" cy="18" rx="10" ry="8" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><path d="M12 18 Q16 14 20 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><circle cx="16" cy="10" r="4" fill="currentColor" opacity="0.2"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="skin4.ancient">Modern formülasyon</span>
+              <span class="badge badge-science" data-i18n="skin4.badge2">Kanıt temelli</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="skin4.name">Doğal Deodorant</h3>
+            <p class="recipe-latin" data-i18n="skin4.latin">Hindistan cevizi yağı + Karbonat + Arrowroot</p>
+            <p class="recipe-desc" data-i18n="skin4.desc">Antik Mısırlılar deodorant olarak kokulu yağlar ve aromatik reçineler kullandı.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="skin4.ingredients"></ul>
+              <ol class="steps" data-i18n-html="skin4.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="skin4.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="skin4.science"></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EV YAPIMI ŞİFALI KARIŞIMLAR -->
+    <section class="section" id="ev-ilaclari">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.remedies.tag">Ev Yapımı Şifalı Karışımlar</span>
+        <h2 data-i18n="section.remedies.title">Doğanın eczanesi evde</h2>
+        <p data-i18n="section.remedies.desc">Anadolu ninelerinden, Ayurveda hekimlerinden ve geleneksel Çin bitkicilerinden miras kalan tarifler — hepsi bilimsel açıklamalı.</p>
+      </div>
+      <div class="recipe-grid">
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--amber-light)">
+            <div class="recipe-icon" style="color: var(--amber-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M10 20 Q10 10 16 7 Q22 10 22 20 Q22 27 16 27 Q10 27 10 20Z" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.5"/><path d="M12 16 Q16 13 20 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M11 20 Q16 17 21 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="rem1.ancient">Akdeniz + Anadolu</span>
+              <span class="badge badge-science" data-i18n="rem1.badge2">RCT kanıtı</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="rem1.name">Doğal Bal-Kekik Öksürük Şurubu</h3>
+            <p class="recipe-latin" data-i18n="rem1.latin">Mel + Thymus vulgaris + Zingiber</p>
+            <p class="recipe-desc" data-i18n="rem1.desc">Bal, Mısır papirüslerinden beri solunum şikayetleri için kullanılmaktadır.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="rem1.ingredients"></ul>
+              <ol class="steps" data-i18n-html="rem1.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="rem1.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="rem1.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--coral-light)">
+            <div class="recipe-icon" style="color: var(--coral-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="10" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="1.5"/><path d="M10 12 Q12 16 10 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M22 12 Q20 16 22 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M13 10 Q16 14 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="rem2.ancient">Yerli Amerika + Avrupa</span>
+              <span class="badge badge-science" data-i18n="rem2.badge2">Meta-analiz</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="rem2.name">Eklem Ağrısı Ovması (Salve)</h3>
+            <p class="recipe-latin" data-i18n="rem2.latin">Kapsaisin + Arnika + Zerdeçal + Hindistan cevizi yağı</p>
+            <p class="recipe-desc" data-i18n="rem2.desc">Acı biber, Kolomb öncesi Mezoamerika'dan beri ağrı için topikal olarak uygulanmıştır.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="rem2.ingredients"></ul>
+              <ol class="steps" data-i18n-html="rem2.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="rem2.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="rem2.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--amber-light)">
+            <div class="recipe-icon" style="color: var(--amber-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 20 Q8 12 16 10 Q24 12 24 20 Q24 26 16 26 Q8 26 8 20Z" fill="currentColor" opacity="0.15"/><path d="M12 18 Q14 14 16 18 Q18 22 20 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="rem3.ancient">Antik Mısır + Ayurveda</span>
+              <span class="badge badge-science" data-i18n="rem3.badge2">Klinik kanıt</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="rem3.name">Yara İyileştirici Bal-Zerdeçal Macunu</h3>
+            <p class="recipe-latin" data-i18n="rem3.latin">Manuka balı + Zerdeçal + Aloe vera</p>
+            <p class="recipe-desc" data-i18n="rem3.desc">Bal yara pansumanları, bilinen en eski tıbbi metin olan Edwin Smith Papirüs'ünde yer alır.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="rem3.ingredients"></ul>
+              <ol class="steps" data-i18n-html="rem3.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="rem3.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="rem3.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <div class="recipe-header" style="background: var(--blue-light)">
+            <div class="recipe-icon" style="color: var(--blue-dark)">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 6 Q10 10 8 16 Q10 24 16 26 Q22 24 24 16 Q22 10 16 6Z" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.5"/><path d="M11 16 Q13 14 16 16 Q19 18 21 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="recipe-badges">
+              <span class="badge badge-ancient" data-i18n="rem4.ancient">Ayurveda + Akdeniz</span>
+              <span class="badge badge-science" data-i18n="rem4.badge2">Klinik çalışma</span>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <h3 data-i18n="rem4.name">Boğaz Gargarası ve Spreyi</h3>
+            <p class="recipe-latin" data-i18n="rem4.latin">Tuz + Zerdeçal + Elma sirkesi + Manuka balı</p>
+            <p class="recipe-desc" data-i18n="rem4.desc">Tuzlu su gargarası 2700 yıl önce Çin tıbbında kayıt altına alınmış tıbbın en eski müdahalelerinden biridir.</p>
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="rem4.ingredients"></ul>
+              <ol class="steps" data-i18n-html="rem4.steps"></ol>
+            </div>
+            <div class="recipe-section">
+              <h4 data-i18n="label.benefits">Ne işe yarar?</h4>
+              <div class="benefit-tags" data-i18n-html="rem4.benefits"></div>
+            </div>
+            <div class="recipe-section science-block">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="rem4.science"></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FONKSİYONEL İÇECEKLER -->
+    <section class="section section-alt" id="tonikler">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.tonics.tag">Fonksiyonel İçecekler & Tonikler</span>
+        <h2 data-i18n="section.tonics.title">İlacını iç</h2>
+        <p data-i18n="section.tonics.desc">Hipokrat'ın "Gıdan ilaç olsun"undan Ayurveda rasayanalarına — fonksiyonel içecekler tarihin en eski terapötik araçlarından biridir.</p>
+      </div>
+      <div class="recipe-grid recipe-grid-wide">
+
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--teal-light)">
+            <div class="recipe-icon" style="color: var(--teal-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="30" rx="14" ry="10" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/><path d="M24 10 Q18 18 18 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M24 10 Q30 18 30 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="24" cy="10" r="4" fill="currentColor" opacity="0.25"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="ton1.ancient">Tropikal + Akdeniz geleneği</span>
+                <span class="badge badge-science" data-i18n="ton1.badge2">Spor bilimi</span>
+              </div>
+              <h3 data-i18n="ton1.name">Doğal Elektrolit İçeceği</h3>
+              <p class="recipe-latin" data-i18n="ton1.latin">Hindistan cevizi suyu + Limon + Deniz tuzu + Bal</p>
+              <p class="recipe-desc-sm" data-i18n="ton1.desc">Hindistan cevizi suyu, insan kan plazmasına en yakın elektrolit profiline sahip doğal içecektir.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="ton1.ingredients"></ul>
+              <ol class="steps" data-i18n-html="ton1.steps"></ol>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="ton1.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="ton1.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--green-light)">
+            <div class="recipe-icon" style="color: var(--green-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 8 Q14 16 14 28 Q14 38 24 40 Q34 38 34 28 Q34 16 24 8Z" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.5"/><path d="M18 26 Q24 22 30 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M16 32 Q24 27 32 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="ton2.ancient">Avrupa halk tıbbı + GTT</span>
+                <span class="badge badge-science" data-i18n="ton2.badge2">Klinik kanıt</span>
+              </div>
+              <h3 data-i18n="ton2.name">Karaciğer Detoks Toniği</h3>
+              <p class="recipe-latin" data-i18n="ton2.latin">Deve dikeni + Karahindiba + Limon + Zencefil</p>
+              <p class="recipe-desc-sm" data-i18n="ton2.desc">Deve dikeni Plinius Yaşlı döneminden beri karaciğer rahatsızlıkları için kullanılmaktadır.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="ton2.ingredients"></ul>
+              <ol class="steps" data-i18n-html="ton2.steps"></ol>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="ton2.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="ton2.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--purple-light)">
+            <div class="recipe-icon" style="color: var(--purple-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="1.5"/><path d="M16 20 Q20 16 24 20 Q28 24 32 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M16 28 Q20 24 24 28 Q28 32 32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="ton3.ancient">Ayurveda + And + Çin</span>
+                <span class="badge badge-science" data-i18n="ton3.badge2">Çok sayıda RCT</span>
+              </div>
+              <h3 data-i18n="ton3.name">Adaptogen Sabah Karışımı</h3>
+              <p class="recipe-latin" data-i18n="ton3.latin">Ashwagandha + Maca + Kakao + Reishi</p>
+              <p class="recipe-desc-sm" data-i18n="ton3.desc">Adaptojenler, vücudun uyarı olmaksızın fiziksel ve zihinsel strese direnmesine yardımcı bitkilerdir.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="ton3.ingredients"></ul>
+              <ol class="steps" data-i18n-html="ton3.steps"></ol>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="ton3.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="ton3.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--amber-light)">
+            <div class="recipe-icon" style="color: var(--amber-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="10" y="20" width="28" height="20" rx="6" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.5"/><path d="M18 20 Q18 10 24 8 Q30 10 30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M16 28 Q24 24 32 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="ton4.ancient">Çin + Kore + Anadolu</span>
+                <span class="badge badge-science" data-i18n="ton4.badge2">Kanıt temelli</span>
+              </div>
+              <h3 data-i18n="ton4.name">Bağırsak Onarıcı Kemik Suyu</h3>
+              <p class="recipe-latin" data-i18n="ton4.latin">Kemik suyu + Zencefil + Zerdeçal + Miso</p>
+              <p class="recipe-desc-sm" data-i18n="ton4.desc">Kemik suyu, Asya ve Akdeniz kültürlerinde binlerce yıldır temel şifa aracıdır.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="recipe-section">
+              <h4 data-i18n="label.recipe">Tarif</h4>
+              <ul class="ingredient-list" data-i18n-html="ton4.ingredients"></ul>
+              <ol class="steps" data-i18n-html="ton4.steps"></ol>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="ton4.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="ton4.science"></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SAÇ & VÜCUT BAKIMI -->
+    <section class="section" id="vücut-bakimi">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.body.tag">Saç & Vücut Bakımı</span>
+        <h2 data-i18n="section.body.title">Kadim ritüeller, modern sonuçlar</h2>
+        <p data-i18n="section.body.desc">Kleopatra'nın süt banyolarından Ayurveda'nın yağ masajına — bu vücut bakım gelenekleri zamanın ve bilimin sınavından geçmiştir.</p>
+      </div>
+      <div class="recipe-grid recipe-grid-wide">
+
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--coral-light)">
+            <div class="recipe-icon" style="color: var(--coral-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 8 Q16 16 16 28 Q16 40 24 42 Q32 40 32 28 Q32 16 24 8Z" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.5"/><path d="M18 22 Q24 18 30 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M16 30 Q24 25 32 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="body1.ancient">Ayurveda + Akdeniz</span>
+                <span class="badge badge-science" data-i18n="body1.badge2">Klinik çalışma</span>
+              </div>
+              <h3 data-i18n="body1.name">Saç Büyüme Saç Derisi Tedavisi</h3>
+              <p class="recipe-latin" data-i18n="body1.latin">Çemen + Biberiye + Hint yağı + Nane</p>
+              <p class="recipe-desc-sm" data-i18n="body1.desc">Çemen tohumu Tutankhamun'un mezarında bulunmuştur. Biberiye Rönesans'tan beri Akdeniz'de saç sağlığı için kullanılmaktadır.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="two-col">
+              <div class="recipe-section">
+                <h4 data-i18n="body1.recipe1.title">Çemen tohumu maskesi</h4>
+                <ul class="ingredient-list" data-i18n-html="body1.recipe1.ingredients"></ul>
+                <ol class="steps" data-i18n-html="body1.recipe1.steps"></ol>
+              </div>
+              <div class="recipe-section">
+                <h4 data-i18n="body1.recipe2.title">Biberiye-Hint yağı büyüme yağı</h4>
+                <ul class="ingredient-list" data-i18n-html="body1.recipe2.ingredients"></ul>
+                <ol class="steps" data-i18n-html="body1.recipe2.steps"></ol>
+              </div>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="body1.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="body1.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--blue-light)">
+            <div class="recipe-icon" style="color: var(--blue-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="34" rx="16" ry="8" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.5"/><path d="M14 28 Q14 18 24 14 Q34 18 34 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M18 22 Q24 18 30 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="body2.ancient">Roma hamamları + Ayurveda</span>
+                <span class="badge badge-science" data-i18n="body2.badge2">Kanıt temelli</span>
+              </div>
+              <h3 data-i18n="body2.name">Detoks Banyo Ritüeli</h3>
+              <p class="recipe-latin" data-i18n="body2.latin">Epsom tuzu + Karbonat + Zencefil + Lavanta</p>
+              <p class="recipe-desc-sm" data-i18n="body2.desc">Romalılar kısmen terapötik amaçlarla hamam kompleksleri inşa etti. Ayurveda'nın "swedana" ter terapisi bu geleneğin köküdür.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="two-col">
+              <div class="recipe-section">
+                <h4 data-i18n="body2.recipe1.title">Klasik detoks banyosu</h4>
+                <ul class="ingredient-list" data-i18n-html="body2.recipe1.ingredients"></ul>
+                <ol class="steps" data-i18n-html="body2.recipe1.steps"></ol>
+              </div>
+              <div class="recipe-section">
+                <h4 data-i18n="body2.recipe2.title">Isıtıcı zencefil detoks</h4>
+                <ul class="ingredient-list" data-i18n-html="body2.recipe2.ingredients"></ul>
+                <ol class="steps" data-i18n-html="body2.recipe2.steps"></ol>
+              </div>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="body2.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="body2.science"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recipe-card recipe-card-wide">
+          <div class="recipe-header recipe-header-side" style="background: var(--green-light)">
+            <div class="recipe-icon" style="color: var(--green-dark)">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="12" y="18" width="24" height="22" rx="6" fill="currentColor" opacity="0.12" stroke="currentColor" stroke-width="1.5"/><path d="M20 18 Q20 10 24 8 Q28 10 28 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M18 28 Q24 24 30 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M18 33 Q24 29 30 33" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <div class="recipe-badges" style="margin-bottom: 8px">
+                <span class="badge badge-ancient" data-i18n="body3.ancient">Antik Mısır + Ayurveda</span>
+                <span class="badge badge-science" data-i18n="body3.badge2">Klinik kanıt</span>
+              </div>
+              <h3 data-i18n="body3.name">Doğal Diş Macunu</h3>
+              <p class="recipe-latin" data-i18n="body3.latin">Hindistan cevizi yağı + Karbonat + Bentonit + Nane</p>
+              <p class="recipe-desc-sm" data-i18n="body3.desc">En eski diş macunu tarifi M.Ö. 1700'e dayanır. Ayurveda ağız hijyeni için neem dalları ve bitkisel tozlar kullandı.</p>
+            </div>
+          </div>
+          <div class="recipe-body recipe-body-wide">
+            <div class="two-col">
+              <div class="recipe-section">
+                <h4 data-i18n="body3.recipe1.title">Temel formül</h4>
+                <ul class="ingredient-list" data-i18n-html="body3.recipe1.ingredients"></ul>
+                <ol class="steps" data-i18n-html="body3.recipe1.steps"></ol>
+              </div>
+              <div class="recipe-section">
+                <h4 data-i18n="body3.recipe2.title">Beyazlatıcı aktif kömür versiyonu</h4>
+                <ul class="ingredient-list" data-i18n-html="body3.recipe2.ingredients"></ul>
+                <ol class="steps" data-i18n-html="body3.recipe2.steps"></ol>
+              </div>
+            </div>
+            <div class="benefit-tags" style="margin-top: 12px" data-i18n-html="body3.benefits"></div>
+            <div class="recipe-section science-block" style="margin-top: 16px">
+              <h4 data-i18n="label.science">Bilimsel dayanak</h4>
+              <p data-i18n="body3.science"></p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- İPUÇLARI -->
+    <section class="section section-alt">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.tips.tag">Önemli Notlar</span>
+        <h2 data-i18n="section.tips.title">Doğru kullanım için</h2>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon" data-i18n="tip1.icon">🌡️</div>
+          <h4 data-i18n="tip1.title">Su sıcaklığı</h4>
+          <p data-i18n="tip1.desc">Çoğu bitkisel çay için ideal su sıcaklığı 85-95°C'dir.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon" data-i18n="tip2.icon">⏱️</div>
+          <h4 data-i18n="tip2.title">Demleme süresi</h4>
+          <p data-i18n="tip2.desc">Kısa demleme daha hafif, uzun demleme daha güçlü etki sağlar.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon" data-i18n="tip3.icon">🍯</div>
+          <h4 data-i18n="tip3.title">Bal hakkında</h4>
+          <p data-i18n="tip3.desc">Ham bal 60°C'nin üzerinde enzimlerini kaybeder.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon" data-i18n="tip4.icon">📅</div>
+          <h4 data-i18n="tip4.title">Düzenlilik</h4>
+          <p data-i18n="tip4.desc">Bitkisel tedavilerin çoğu en az 4-8 hafta sürer.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon" data-i18n="tip5.icon">💊</div>
+          <h4 data-i18n="tip5.title">İlaç etkileşimleri</h4>
+          <p data-i18n="tip5.desc">Bazı bitkiler ilaçlarla etkileşime girebilir.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon" data-i18n="tip6.icon">🌿</div>
+          <h4 data-i18n="tip6.title">Kalite önemli</h4>
+          <p data-i18n="tip6.desc">Organik, sertifikalı kaynaklardan alınan bitkiler tercih edin.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KAYNAKLAR -->
+    <section class="section" id="kaynaklar">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section.sources.tag">Kaynaklar &amp; Referanslar</span>
+        <h2 data-i18n="section.sources.title">Bilimsel ve geleneksel kaynaklar</h2>
+        <p data-i18n="section.sources.desc">Bu sitede paylaşılan bilgiler aşağıdaki kaynaklara dayanmaktadır.</p>
+      </div>
+      <div class="sources-grid">
+        <div class="source-group">
+          <h4 data-i18n="sources.db.title">Bilimsel veritabanları</h4>
+          <ul>
+            <li>PubMed / MEDLINE (NIH)</li>
+            <li>Cochrane Library</li>
+            <li>WHO Monographs on Selected Medicinal Plants</li>
+            <li>European Medicines Agency (EMA) Herbal Monographs</li>
+            <li>Natural Medicines Database</li>
+          </ul>
+        </div>
+        <div class="source-group">
+          <h4 data-i18n="sources.books.title">Temel akademik kaynaklar</h4>
+          <ul>
+            <li>Blumenthal M. et al. — <em>The Complete German Commission E Monographs</em></li>
+            <li>Hoffmann D. — <em>Medical Herbalism</em> (2003)</li>
+            <li>Mills S. &amp; Bone K. — <em>Principles and Practice of Phytotherapy</em></li>
+            <li>Bone K. — <em>Clinical Guide to Blending Liquid Herbs</em></li>
+          </ul>
+        </div>
+        <div class="source-group">
+          <h4 data-i18n="sources.ancient.title">Kadim kaynaklar</h4>
+          <ul>
+            <li>Dioscorides — <em>De Materia Medica</em> (M.S. 77)</li>
+            <li>İbn Sina — <em>El Kanun fi't-Tıbb</em> (1025)</li>
+            <li>Hipokrat — <em>Corpus Hippocraticum</em> (M.Ö. 400)</li>
+            <li>Charaka Samhita (M.Ö. 400-200)</li>
+            <li>Huangdi Neijing (M.Ö. 200)</li>
+          </ul>
+        </div>
+        <div class="source-group">
+          <h4 data-i18n="sources.disclaimer.title">Önemli uyarı</h4>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.7" data-i18n="sources.disclaimer.text">Bu sitedeki bilgiler genel sağlık bilgisi amaçlı hazırlanmıştır ve tıbbi tavsiye yerine geçmez.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5"/><path d="M14 6 C10 10, 8 14, 10 18 C12 22, 16 22, 18 18 C20 14, 18 10, 14 6Z" fill="currentColor" opacity="0.2"/><path d="M14 6 C10 10, 8 14, 10 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M14 6 C18 10, 20 14, 18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+        <span>Doğanın Şifası</span>
+      </div>
+      <p data-i18n="footer.tagline">Kadim bilgelik · Bilimsel temel · Doğal yaşam</p>
+      <p class="footer-note" data-i18n="footer.note">Bu site tıbbi tavsiye niteliği taşımaz.</p>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
