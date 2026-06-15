@@ -105,10 +105,7 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 4px;
-  margin-left: auto;
-  overflow-x: auto;
-  flex-wrap: nowrap;
+  gap: 2px;
 }
 
 .nav-links a {
@@ -130,6 +127,75 @@ body {
   align-items: center;
   gap: 8px;
   margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* NAV SEARCH */
+.nav-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-alt);
+  border: 0.5px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 12px;
+  color: var(--text-muted);
+  width: 200px;
+  transition: width 0.2s, border-color 0.2s;
+}
+
+.nav-search-wrap:focus-within {
+  border-color: var(--accent);
+  width: 260px;
+}
+
+.nav-search-wrap input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: var(--text);
+  outline: none;
+  font-family: inherit;
+  min-width: 0;
+}
+
+.nav-search-wrap input::placeholder { color: var(--text-muted); }
+
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  z-index: 200;
+  max-height: 320px;
+  overflow-y: auto;
+  min-width: 280px;
+}
+
+.dd-item {
+  display: block;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 0.5px solid var(--border);
+  transition: background 0.1s;
+}
+
+.dd-item:last-child { border-bottom: none; }
+.dd-item:hover { background: var(--bg-alt); color: var(--accent); }
+
+.dd-empty {
+  padding: 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
 }
 
 .lang-toggle {
@@ -564,9 +630,16 @@ body {
   border-radius: var(--radius-lg);
   padding: 20px;
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 0;
   box-shadow: var(--shadow-card);
   transition: transform 0.2s;
+}
+
+.herb-card-top {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 4px;
 }
 
 .herb-card:hover { transform: translateY(-1px); }
@@ -748,6 +821,9 @@ body {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-toggle { display: block; }
+  .nav-search-wrap { width: 140px; }
+  .nav-search-wrap:focus-within { width: 180px; }
+  .search-dropdown { min-width: 220px; right: 0; left: auto; }
   .nav-links.open {
     display: flex;
     flex-direction: column;
