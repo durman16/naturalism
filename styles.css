@@ -107,6 +107,8 @@ body {
   list-style: none;
   gap: 4px;
   margin-left: auto;
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 
 .nav-links a {
@@ -774,6 +776,116 @@ body {
 
   .section { padding: 60px 20px; }
 }
+
+/* FILTER BAR */
+.filter-bar {
+  max-width: 900px;
+  margin: 0 auto 8px;
+  padding: 16px 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-alt);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  color: var(--text-muted);
+}
+
+.search-wrap input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  font-family: inherit;
+}
+
+.search-wrap input::placeholder { color: var(--text-muted); }
+
+.pill-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background: var(--bg-alt);
+  border: 0.5px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  font-family: inherit;
+}
+
+.pill:hover { color: var(--text); border-color: var(--accent); }
+.pill.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.no-results {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* CARD ACTIONS */
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 0.5px solid var(--border);
+  gap: 8px;
+}
+
+.share-group {
+  display: flex;
+  gap: 4px;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-alt);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 9px;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.share-btn:hover { color: var(--text); background: var(--bg); }
+
+.fav-btn {
+  background: none;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.fav-btn:hover, .fav-btn.fav-active { color: #e05; border-color: #e05; }
+
 
 @media (max-width: 480px) {
   .recipe-grid { grid-template-columns: 1fr; }
